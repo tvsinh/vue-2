@@ -1,6 +1,9 @@
 const path = require('path')
 
 const TARGET = process.env.TARGET || 'all' // 'student' | 'admin' | 'all'
+
+// Expose target to client bundle so routers can determine correct base paths
+process.env.VUE_APP_TARGET = TARGET
 const isProd = process.env.NODE_ENV === 'production'
 
 // Public path theo từng môi trường (đặt trong .env.* phía dưới)
