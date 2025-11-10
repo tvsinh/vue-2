@@ -3,6 +3,7 @@
   "version": "6.4.0",
   "private": true,
   "scripts": {
+    "serve": "vue-cli-service serve",
     "all": "vue-cli-service serve",
     "student": "cross-env TARGET=student vue-cli-service serve",
     "admin": "cross-env TARGET=admin vue-cli-service serve",

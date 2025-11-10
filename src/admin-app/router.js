@@ -1,6 +1,7 @@
 import { createRouter } from '../shared/router/createRouter'
 
-const base = process.env.TARGET === 'all' ? '/admin' : '/'
+const target = process.env.VUE_APP_TARGET || 'all'
+const base = target === 'all' ? '/admin' : '/'
 export default createRouter({
   base,
   routes: [
